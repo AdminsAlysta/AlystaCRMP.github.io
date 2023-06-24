@@ -1,0 +1,678 @@
+/* MAIN START */
+@import url("//cdn.web-fonts.ge/fonts/bpg-banner-caps/css/bpg-banner-caps.min.css");
+            
+@font-face {
+	font-family: 'GolosTextWebDemiBold';
+	src: 
+		url('../fonts/golos-text_demibold.woff2') format('woff2'),
+		url('../fonts/golos-text_demibold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+}
+
+nav {
+    position: absolute;
+    left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    top: 22px;
+    left: 0;
+    /* background-color: #FD0505; */
+    background: linear-gradient(90deg,#ff0015 25%,#ce2837);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* MAIN END */
+
+.container {
+    max-width: 1920px;
+    width:100%;
+    margin: 0 auto;   
+}
+
+.logonav {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 0px;
+    top: 10px;
+    filter: drop-shadow(0px 4px 0px #ff0015 100%,#ce2837);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main {
+    position: absolute;
+    color: white;
+    font-family: "BPG Banner Caps", sans-serif;
+    top: 73px;
+    left: 225px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: 0.5s
+}
+
+.main:hover{
+    transform: scale(1.1)
+}
+
+.updates {
+    position: absolute;
+    color: #968686;
+    font-family: "BPG Banner Caps", sans-serif;
+    top: 73px;
+    left:450px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.updates:hover{
+    color:white;
+    transform: scale(1.1)
+}
+
+.forum {
+    position: absolute;
+    color: #968686;
+    font-family: "BPG Banner Caps", sans-serif;
+    top: 73px;
+    left: 750px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.forum:hover{
+    color: white;
+    transform: scale(1.1)
+}
+
+
+.about {
+    position: absolute;
+width: 713px;
+height: 143px;
+left: 125px;
+top: 285px;
+
+font-family: "BPG Banner Caps", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 2.5rem;
+line-height: 78px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 3px rgba(253, 253, 253, 0.29);
+}
+
+.trailer {
+    position: absolute;
+width: 50px;
+height: 50px;
+left: 115px;
+cursor: pointer;
+top: 469px;
+
+font-family: "BPG Banner Caps", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 5rem;
+line-height: 43px;
+text-align: center;
+color: white;
+text-decoration: none;
+box-shadow: 0 calc(25px*var(--sw)) calc(45px*var(--sw)) #000000a6,0 calc(25px*var(--sw)) calc(45px*var(--sw)) #948fb026,inset 0 0 calc(25px*var(--sw)) #ffffff1f;
+
+-webkit-animation: breathing 5s ease-out infinite normal;
+    animation: breathing 5s ease-out infinite normal;
+
+    outline: none;
+    border: none;
+    background-color: #252525;
+    border-radius: 8px;
+    background-image: url(../Images/btn-main-promo.svg);
+    background-size: cover;
+}
+
+.trailer1:hover {
+    transform: scale(1.1);
+}
+
+.trailer1 {
+    position: absolute;
+left: 185px;
+top: 475px;
+
+font-family: "BPG Banner Caps", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1.5rem;
+line-height: 43px;
+
+color: #FFFFFF;
+text-decoration: none;
+transition: 0.5s;
+}
+.sgn {
+position: absolute;
+width: 275px;
+height: 84px;
+cursor: pointer;
+left: 500px;
+
+font-family: "BPG Banner Caps", sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 40px;
+
+color: white;
+top: 450px;
+
+background: linear-gradient(90deg,#ce2837 4.17%,#ff5160);
+transform: matrix(1,0,-.09,1,0,0);
+border-radius: 8px;
+transition: 0.5s;
+}
+.sgn:hover {
+    scale: 1.1;
+    transform: matrix(1,0,-.09,1,0,0);
+}
+
+.sgn1 {
+    position: absolute;
+    font-family: "BPG Banner Caps", sans-serif;
+font-style: normal;
+font-weight: 400;
+cursor: pointer;
+font-size: 1.25rem;
+line-height: 40px;
+
+color: white;
+left: 10px;
+top: 25px;
+text-decoration: none;
+}
+
+.leftimg {
+    position: absolute;
+width: 1141px;
+height: 815px;
+left: 700px;
+top: 150px;
+}
+
+.gp2 {
+    position: absolute;
+    left: 210px;
+    bottom: 15px;
+
+    width: 100px;
+    height:100px;
+
+
+    filter: drop-shadow(0 calc(25px*var(--sw)) calc(15px*var(--sw)) rgba(0,0,0,.15));
+    right: calc(-7px*var(--sw));
+    top: calc(-48px*var(--sw));
+    transform: rotate(38.95deg);
+}
+
+.dc {
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    top: 50px;
+    width: 60px;
+    left: 1325px;
+    height:60px;
+    transition: 0.5s;
+}
+
+.fb {
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    top: 50px;
+    width: 60px;
+    left: 1235px;
+    height:60px;
+    transition: 0.5s;
+}
+
+.yt {
+    position: absolute;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.250);
+    top: 50px;
+    width: 60px;
+    left: 1415px;
+    height:60px;
+    transition: 0.5s;
+}
+.dclogo {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    left: 1337px;
+    top: 65px;
+    opacity: 100%;
+    transition: 0.5s;
+}
+.fblogo {
+    position: relative;
+    font-size: 30px;
+    color: white;
+    left: 1242px;
+    top: 65px;
+    opacity: 100%;
+    transition: 0.5s;
+}
+
+.dc:hover, .fb:hover,.yt:hover {
+    /* background-color: rgb(58, 58, 247); */
+    background-color: #ff0015;
+}
+
+.dclogo:hover, .fblogo:hover {
+    opacity: 100%;
+}
+
+.ytlogo {
+    position: absolute;
+    top:50px;
+    left: 1428px;
+    top: 65px;
+    font-size: 2rem;
+    color: white;
+}
+
+.ytlogo:hover {
+    opacity: 100%;
+}
+
+/* ------------ CUSTOM SCROLLBAR ------------ */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffffff26;
+}
+::-webkit-scrollbar-thumb {
+    background: #ed4352;
+}
+
+/* ------------ SERVERS ------------ */
+/* .servers {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+
+    top: 560px;
+    left: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.server1 {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(90deg,#ce2837 4.17%,#ff5160);
+    top: 560px;
+    border-radius: 8px;
+    left: 230px;
+}
+.name {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 570px;
+    left: 325px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+/* SECOND PAGE */
+.sp {
+    display: flex;
+    justify-content: center;
+}
+
+#spm {
+    position: absolute;
+    width: 1916px;
+    height: 1080px;
+    top:993px;
+    z-index: -1;
+    filter: brightness(100%);
+}
+.sg {
+    position: absolute;
+    color:white;
+    top: 1045px;
+}
+.bar {
+    position: absolute;
+    width: 155px;
+    height: 5px;
+    background: linear-gradient(90deg,#ce2837 4.17%,#ff5160);
+    top: 1095px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.bar1 {
+    position: absolute;
+width: 336px;
+height: 402px;
+left: 150px;
+top: 1235px;
+
+background: #222121;
+box-shadow: 10px 10px 10px 2px rgba(99, 99, 99, 0.404);
+border-radius: 30px;
+transform: matrix(1,0,.20,1,0,0);
+display: flex;
+color:white;
+justify-content: center;
+align-items: center;
+font-family: "BPG Banner Caps", sans-serif;
+font-size: 2rem;
+rotate: 90deg;
+}
+.info1 {
+    position: absolute;
+    color:white;
+    top: 1375px;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 32px;
+    font-family: "BPG Banner Caps", sans-serif;
+}
+.info2 {
+    position: absolute;
+    color:white;
+    top: 1420px;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 1280px;
+    font-family: "BPG Banner Caps", sans-serif;
+}
+.info3 {
+    position: absolute;
+    color:white;
+    top: 1420px;
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 1280px;
+    font-family: "BPG Banner Caps", sans-serif;
+}
+.bar2 {
+    position: absolute;
+width: 336px;
+height: 402px;
+left: 770px;
+color:white;
+top: 1200px;
+
+background: #222121;
+box-shadow: 10px 10px 10px 2px rgba(99, 99, 99, 0.404);
+border-radius: 30px;
+transform: matrix(1,0,.0,1,0,0);
+font-family: "BPG Banner Caps", sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+.bar3 {
+    position: absolute;
+width: 336px;
+color:white;
+height: 402px;
+right: 150px;
+top: 1235px;
+
+background: #222121;
+box-shadow: 10px -10px 10px 2px rgba(99, 99, 99, 0.404);
+border-radius: 30px;
+transform: matrix(1,0,-.20,1,0,0);
+display: flex;
+justify-content: center;
+font-family: "BPG Banner Caps", sans-serif;
+rotate: 90deg;
+align-items: center;
+font-size: 2rem;
+}
+.mainfooter {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    top: 1935px;
+    background-color: #272727;
+}
+
+.iyo1 {
+    position: absolute;
+    top: -210px;
+    z-index: 1;
+}
+
+.footer__img {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0px 4px 0px #ff0015 100%,#ce2837);
+    top: 250px;
+    left: 150px;
+}
+.ragac {
+    position: absolute;
+    width: 960px;
+    height: 949px;
+    background: #1E1E1E;
+    opacity: 75%;
+}
+.copyright {
+    position: absolute;
+    color:white;
+    top: 275px;
+    left: 235px;
+    width: 250px;
+    font-weight: 600;
+    font-family: 'GolosTextWebDemiBold';
+}
+.footer__text {
+    position: absolute;
+    color:white;
+    font-size: 1.25rem;
+    font-family: 'GolosTextWebDemiBold';
+    font-weight: 600;
+    top: 275px;
+    width: 300px;
+    left: 1450px;
+}
+
+.socials1 {
+    position: absolute;
+    transform: translateX(-250px);
+    top: 207px;
+    scale: 0.9;
+}
+
+/* Updates */
+.mainfooter1 {
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    top: 834px;
+    background-color: #272727;
+    z-index: 0;
+}
+.cont {
+    position: absolute;
+    width: 70%;
+    height: 435px;
+    z-index: 1;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.navbar {
+    left: 100px;
+}
+.item {
+    width: 100%;
+    height: 53.22%;
+    border-radius: 10px;
+    left: 0px;
+    margin: 22px;
+    transition: 0.5s;
+}
+.item:hover {
+    transform: translateY(-20px);
+}
+.border {
+    width: 99.8%;
+    height: 170%;
+    border: 1px solid white;
+    border-radius: 10px;
+    opacity: 50%;
+}
+.update {
+    color:white;
+    text-align: center;
+    transform: translateY(-125px);
+    font-size: 2rem;
+    font-family: "BPG Banner Caps", sans-serif;
+}
+.iyo {
+    position: absolute;
+    top: -225px;
+    z-index: 1;
+}
+.copyright1 {
+    position: absolute;
+    color:white;
+    top: 275px;
+    width: 250px;
+    left: 230px;
+    font-weight: 600;
+    font-family: 'GolosTextWebDemiBold';
+}
+.footer__text1 {
+    position: absolute;
+    color:white;
+    font-size: 20px;
+    font-family: 'GolosTextWebDemiBold';
+    font-weight: 600;
+    top: 275px;
+    left: 1450px;
+    width: 350px;
+}
+.socials12 {
+    position: absolute;
+    transform: translateX(-285px);
+    top: 215px;
+    scale: 0.9;
+}
+.footer__img1 {
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    filter: drop-shadow(0px 4px 0px #ff0015 100%,#ce2837);
+    top: 250px;
+    left: 150px;
+}

@@ -1,0 +1,213 @@
+/* DESKTOP RESPONSIVE FOR MAIN PAGE [1366x768;1280x1024] */
+
+@media only screen and (max-width: 1366px) {
+    .navbar {
+        left: 50px;
+    }
+    .leftimg {
+        transform: scale(0.68);
+        left: 350px;
+        top: 0px;
+    }
+    .socials {
+        scale: 0.8;
+        top: 15px;
+        left: -60px;
+    }
+    .updates {
+        left: 375px;
+    }
+    .forum {
+        left: 565px;
+    }
+    .socials {
+        position: absolute;
+        transform: translateX(-275px);
+        bottom: 5px;
+    }
+    .trailer1 {
+        width: 250px;
+    }
+    .tpsgn {
+        position: absolute;
+        top: 50px;
+    }
+    .about {
+        position: absolute;
+        transform: translateY(50px);
+    }
+    .mainfooter {
+        top: 1425px;
+    }
+    .bar1 {
+        width: 300px;
+        height: 350px;
+        top: 1050px;
+    }
+    .bar2 {
+        width: 300px;
+        height: 350px;
+        top: 1000px;
+        left: 535px;
+    }
+    .bar3 {
+        width: 300px;
+        height: 350px;
+        top: 1050px;
+        right: 150px;
+    }
+    #spm {
+        width: 1360px;
+        height: 825px;
+        top: 850px;
+    }
+    .ragac {
+        height: 675px;
+        width: 54%;
+    }
+    .info1 {
+        left: 200px;
+        top: 1200px;
+    }
+    .info2 {
+        left: 590px;
+        top: 1175px;
+    }
+    .info3 {
+        right: 200px;
+        top: 1200px;
+    }
+    .footer__img {
+        transform: translateY(-55px);
+    }
+    .copyright {
+        top: 215px;
+    }
+    .socials1 {
+        transform: translateX(-470px);
+        top: 165px;
+        scale: 0.8;
+    }
+    .footer__text {
+        position: absolute;
+        left: 930px;
+        top: 215px;
+    }
+    .sg {
+        top: 900px;
+        left: 515px;
+    }
+    .bar {
+        top: 950px;
+        margin-left: 66px;
+    }
+    .mainfooter {
+        top: 1576px;
+        height: 0px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .navbar {
+        left: 50px;
+    }
+    .leftimg{
+        scale: 0.65;
+        top: 50px;
+        transform: translateX(-100px);
+    }
+    .socials1 {
+        transform: translateX(-525px);
+    }
+    .footer__text {
+        left: 875px;
+    }
+    .bar1 {
+        scale: 0.9;
+        top: 1070px;
+    }
+    .bar2 {
+        left: 515px;
+        scale: 0.9;
+        top: 1025px;
+    }
+    .bar3 {
+        scale: 0.9;
+        left: 850px;
+        top: 1070px;
+    }
+    .info1 {
+        left: 200px;
+        top: 1235px;
+    }
+    .info2 {
+        left: 575px;
+        top: 1175px;
+    }
+    .info3 {
+        right: 180px;
+        top: 1235px;
+    }
+    html {
+        width: 93%;
+    }
+    .sg {
+        top: 875px;
+        left: 485px;
+    }
+    .bar {
+        left: 535px;
+        top: 925px;
+    }
+    .ragac{
+        width: 55%;
+    }
+}
+/* RESPONSIVE FOR DESKTOP SCREEN 1 PAGE (MAIN)
+@media only screen and (max-width: 1600px) {
+    
+} */
+
+/* DESKTOP RESPONSIVE FOR UPDATES PAGE [1366x768;1280x1024] */
+
+@media only screen and (max-width: 1366px) {
+    .footer__img1 {
+        top: 250px;
+        left: 135px;
+    }
+    .socials12 {
+        left: -275px;
+    }
+    .footer__text1 {
+        left: 950px;
+    }
+    .cont {
+        width: 85%;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%,-50%);
+    }
+    .update {
+        font-size: 2rem;
+    }
+    .logonav {
+        scale: 0.86;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer__text1 {
+        left: 900px;
+    }
+    .socials12 {
+        left: -300px;
+    }
+    .cont {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .update {
+        font-size: 1.7rem;
+    }
+}
